@@ -43,4 +43,137 @@ The project includes:
 ## 📂 Dataset
 
 The dataset is organized into training and testing folders:
+dataset/
+training/
+0/
+1/
+2/
+3/
+4/
+testing/
+0/
+1/
+2/
+3/
+4/
+
+### 📁 Dataset & Model Download Links
+
+- 🔗 **Trained Model (.h5 file):**  
+  👉 YOUR_DRIVE_LINK_HERE
+
+- 🔗 **Dataset Folder:**  
+  👉 YOUR_DRIVE_LINK_HERE
+
+---
+
+## ⚙️ Project Workflow
+
+### 1️⃣ Data Preprocessing
+- Images resized to 299 × 299
+- Applied Xception `preprocess_input`
+- Image augmentation during training
+
+---
+
+### 2️⃣ Model Training
+- Loaded Xception without top layer
+- Added custom Dense layers
+- Trained on retinal dataset
+- Saved as:
+
+
+---
+
+### 3️⃣ Model Evaluation
+
+The following plots were generated:
+
+- 📈 Training vs Validation Accuracy
+- 📉 Training vs Validation Loss
+- 📊 Confusion Matrix
+- 📊 Class Distribution Plot
+
+These help analyze overfitting and classification performance.
+
+---
+
+## 🌐 Web Application (Flask)
+
+The trained model is integrated into a Flask-based web application.
+
+### 💻 Frontend Pages
+
+1. **Index Page**
+ - Landing page
+ - Navigation to Login / Register
+ - After login, Predict option visible
+
+2. **Login Page**
+ - User authentication
+ - Redirects to home after login
+
+3. **Register Page**
+ - New user registration
+
+4. **Prediction Page**
+ - Upload retinal image
+ - Displays:
+   - Predicted Class
+   - Confidence Score
+   - Uploaded Image
+
+---
+
+## 🔍 How Prediction Works
+
+1. User uploads retinal image.
+2. Image is:
+ - Converted from BGR → RGB
+ - Resized to 299×299
+ - Preprocessed using Xception preprocessing
+3. Model predicts probability for 5 classes.
+4. Highest probability is selected.
+5. Result displayed on screen.
+
+---
+
+## 🛠 Technologies Used
+
+- Python
+- TensorFlow / Keras
+- Flask
+- OpenCV
+- NumPy
+- Matplotlib
+- HTML
+- CSS
+- Bootstrap
+
+---
+
+## 🚀 How to Run the Project
+
+### Step 1: Install Required Libraries
+
+```bash
+pip install tensorflow flask numpy opencv-python matplotlib
+```
+Step 2: Place Model File
+
+Put:
+Updated-xception-diabetic-retinopathy.h5
+
+Step 3: Run Flask App
+python app.py
+
+Step 4: Open in Browser
+http://127.0.0.1:5000/
+
+📊 Output Example
+
+Uploaded Image
+
+Prediction: Moderate NPDR
+
 
