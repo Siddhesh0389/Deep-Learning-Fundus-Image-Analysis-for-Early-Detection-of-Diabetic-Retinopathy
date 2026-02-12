@@ -60,10 +60,10 @@ testing/
 ### 📁 Dataset & Model Download Links
 
 - 🔗 **Trained Model (.h5 file):**  
-  👉 YOUR_DRIVE_LINK_HERE
+  👉 https://drive.google.com/file/d/1jaWRc_l10clG6lhPosO6ee5Vh5mKrjJD/view?usp=drive_link
 
 - 🔗 **Dataset Folder:**  
-  👉 YOUR_DRIVE_LINK_HERE
+  👉 https://www.kaggle.com/datasets/arbethi/diabetic-retinopathy-level-detection?select=preprocessed+dataset
 
 ---
 
@@ -176,4 +176,6 @@ Uploaded Image
 
 Prediction: Moderate NPDR
 
+📄 Conclusion
 
+This project demonstrates how Transfer Learning with Xception can be used for accurate multi-class classification of Diabetic Retinopathy. The integration with a Flask web application makes the system interactive and user-friendly for real-world applications.
